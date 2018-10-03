@@ -6,7 +6,8 @@ class App extends Component {
   state = {
   todos: [
    {id: 1, content: 'Buy some milk'},
-   {id: 2, content: 'Bring some bread'}
+   {id: 2, content: 'Bring some bread'},
+   {id: 3, content: 'Πέτα τη φριτέζα'}
    ] 
   }
   deleteTodo = (id) => {
@@ -27,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="todo-app container">
-      <h2 className='center pink-text'>Todos</h2>  
+      <h2 className='center purple-text'>Todos</h2>  
       <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
       <AddTodo addTodo={this.addTodo}/>
       </div>
